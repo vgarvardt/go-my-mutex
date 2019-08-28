@@ -3,7 +3,7 @@ package mymutex
 // Option is the configuration options type for MyMutex
 type Option func(mutex *MyMutex)
 
-// WithTableName returns option that sets MyMutex timeout
+// WithTimeout returns option that sets MyMutex timeout
 func WithTimeout(timeout int) Option {
 	return func(mutex *MyMutex) {
 		mutex.timeout = timeout
